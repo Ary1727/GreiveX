@@ -1,0 +1,367 @@
+.page-wrapper {
+  background-color: #000;
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  color: #39FF14;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  color: #ccc;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.card {
+  background-color: #111;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 0 12px rgba(57, 255, 20, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.4);
+}
+
+.card h3 {
+  color: #39FF14;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.action-btn {
+  background-color: #39FF14;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.action-btn:hover {
+  background-color: #2ecc71;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/*SendFundPage*/
+/* General Page Container */
+.receive-funds-container {
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Financial Summary Section */
+.financial-summary {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  background-color: #1a1a1a;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+}
+
+/* Title */
+.title-h2 {
+  color: #39FF14;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Fund Table Wrapper */
+.fund-table-wrapper {
+  width: 100%;
+  max-width: 900px;
+  overflow-x: auto;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+  /* Adds a soft glow to the table container */
+}
+
+/* Table Styling */
+.fund-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  color: #fff;
+  background-color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.1);
+}
+
+/* Table Header */
+.fund-table th,
+.fund-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.fund-table thead {
+  background-color: #1a1a1a;
+}
+
+.fund-table th {
+  color: #39FF14;
+  font-weight: 600;
+}
+
+/* Table Row Hover Effect */
+.fund-table tbody tr:hover {
+  background-color: #1c1c1c;
+  transition: background 0.3s;
+}
+
+/* Button Styling */
+.fund-table button {
+  background-color: #39FF14;
+  color: #000;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fund-table button:disabled {
+  background-color: #444;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.fund-table button:hover:enabled {
+  background-color: #2ecc71;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility class for triggering fade animation */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+
+
+/*AssignAdminHead*/
+/* General Page Container */
+.assign-admin-head-container {
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Content Section */
+.assign-admin-head-content {
+  background-color: #111;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.assign-admin-head-title {
+  color: #39FF14;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Form Styling */
+.assign-admin-head-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.assign-admin-head-input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.assign-admin-head-input-label {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.assign-admin-head-input-field {
+  padding: 10px;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.assign-admin-head-input-field:focus {
+  outline: none;
+  border: 2px solid #39FF14;
+}
+
+.assign-admin-head-submit-button {
+  background-color: #39FF14;
+  color: #000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.assign-admin-head-submit-button:hover {
+  background-color: #2ecc71;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility class for triggering fade animation */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+
+.error-message {
+  color: #ff6b6b;
+  /* Slightly brighter red for better readability in dark mode */
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #2a0000;
+  /* Deep dark red background for dark mode */
+  border-radius: 5px;
+  border: 1px solid #ff6b6b;
+  /* Optional: subtle border for better structure */
+}
+
+
+.assign-admin-head-submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.connect-button {
+  background: linear-gradient(135deg, #00bcd4, #faff00);
+  color: #000;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+  max-width: 240px;
+  /* prevents it from stretching full width */
+  width: fit-content;
+  /* takes up only the space it needs */
+  white-space: nowrap;
+  /* keeps text on one line */
+  border: none;
+  cursor: pointer;
+}
+
+.connect-button:hover {
+  background: linear-gradient(135deg, #faff00, #00bcd4);
+  transform: scale(1.05);
+  color: #111;
+}
+
+.back-home-X {
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #888;
+  text-decoration: none;
+}
+
+.back-home-X:hover {
+  background: linear-gradient(135deg, #faff00, #00bcd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
